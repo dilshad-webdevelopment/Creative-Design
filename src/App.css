@@ -1,26 +1,43 @@
-.home {
-  margin: 0px;
-  padding: 0px;
-  position: relative;
-  height: 670px;
+.navbar {
+  padding: 1rem 0;
+  transition: all 0.3s ease;
 }
-.content-center{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 60%;
-  margin: 0 auto;
-  top: 70%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  position: absolute;
-  color: white;
+
+.navbar.glass {
+  background: rgba(10, 10, 12, 0.7);
+  border-bottom: 1px solid var(--glass-border);
 }
-.Container{
-  width: 70%;
-  margin: 0 auto;
+
+.nav-link {
+  color: var(--text-muted) !important;
+  font-weight: 500;
+  margin: 0 10px;
+  transition: all 0.3s ease;
 }
-.card-center{
-  margin:20 20px !important;
+
+.nav-link:hover,
+.nav-link.active {
+  color: var(--text-main) !important;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  letter-spacing: -0.5px;
+}
+
+.main-content {
+  padding-top: 100px;
+  min-height: 100vh;
+}
+
+.section-padding {
+  padding: 80px 0;
+}
+
+.footer {
+  padding: 40px 0;
+  border-top: 1px solid var(--glass-border);
+  margin-top: 80px;
+  text-align: center;
+  color: var(--text-muted);
 }
